@@ -16,6 +16,6 @@ public class TrackleApplicationTests {
 
 	@Test
 	public void test() throws Exception {
-		Crawling.getArticle();
+		Crawling.crwal();
 	}
 }
