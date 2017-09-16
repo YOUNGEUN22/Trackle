@@ -7,24 +7,37 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+@Table(name = "article")
 public class Article {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false, updatable = false)
     private Integer id;
 
-    @Column
+    @Column(name = "title")
     private String title;
 
-    @Column
+    @Column(name = "content")
     private String content;
 
-    @Column
+    @Column(name = "image")
     private String image;
 
-    @Column
+    @Column(name = "company")
     private String company;
 
-    @Column
+    @Column(name = "keyword")
     private String keyword;
+
+    public Article() {
+    }
+
+    public Article(String title, String content, String image, String company, String keyword) {
+        this.title = title;
+        this.content = content;
+        this.image = image;
+        this.company = company;
+        this.keyword = keyword;
+    }
 }

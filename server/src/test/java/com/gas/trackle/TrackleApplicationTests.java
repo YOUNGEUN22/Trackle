@@ -1,6 +1,5 @@
 package com.gas.trackle;
 
-import com.gas.trackle.util.Crawling;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,10 +11,5 @@ public class TrackleApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	}
-
-	@Test
-	public void test() throws Exception {
-		Crawling.crwal();
 	}
 }
